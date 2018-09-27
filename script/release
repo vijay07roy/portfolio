@@ -18,8 +18,8 @@ gem build -q jekyll-theme-minimal.gemspec
 
 # Make sure we're on the master branch.
 
-(git branch | grep -q 'master') || {
-  echo "Only release from the master branch."
+(git branch | grep -q 'gh-pages') || {
+  echo "Only release from the gh-pages branch."
   exit 1
 }
 
